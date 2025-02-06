@@ -77,7 +77,7 @@ def main():
         salida_pdf = superponer_pdf("base.pdf", "superpuesto.pdf", "salida.pdf")
         
         with open(salida_pdf, "rb") as f:
-            st.download_button("🚀 Descargar PDF resultante", f, file_name="salida.pdf", mime="application/pdf")
+            st.download_button("🚀 Descargar PDF resultante", f, file_name="RESULTADO.pdf", mime="application/pdf")
     
 if __name__ == "__main__":
     main()
