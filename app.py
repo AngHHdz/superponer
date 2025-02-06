@@ -53,7 +53,7 @@ def set_background():
             }
             .gif-container {
                 text-align: center;
-                margin-top: 40px;              
+                margin-top: 400px;              
             }
         </style>
         <script>
