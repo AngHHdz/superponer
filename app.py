@@ -1,17 +1,7 @@
 from PyPDF2 import PdfReader, PdfWriter
 import streamlit as st
 import base64
-import streamlit as st
 
-# Add custom CSS to hide the GitHub icon
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
-st.markdown(hide_github_icon, unsafe_allow_html=True)
-
-# Your app code goes here
 
 def superponer_pdf(pdf_base, pdf_superpuesto, salida):
     # Leer los archivos PDF
@@ -78,6 +68,7 @@ def main():
     set_background()
     st.markdown("<h1 class='title'>🔮 Superposición de PDFs  Miguelito 👽</h1>", unsafe_allow_html=True)
     st.markdown("<p class='subtitle'><b>El uso de esta app merece una coca cola bien fría 🥤</b></p>", unsafe_allow_html=True)
+    st.markdown(hide_github_icon, unsafe_allow_html=True)
 
     pdf_base = st.file_uploader("📄 Carga el primer PDF 1️⃣", type="pdf")
     pdf_superpuesto = st.file_uploader("📄 Carga el segundo PDF 2️⃣", type="pdf")
