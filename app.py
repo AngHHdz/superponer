@@ -83,7 +83,7 @@ def main():
             st.download_button("🚀 Descargar PDF resultante", f, file_name="RESULTADO.pdf", mime="application/pdf")
 
 st.markdown("""
-    <div style='margin-top: 30px; text-align: center;'>
+    <div style='margin-top: 10px; text-align: center;'>
         <img src='https://i.gifer.com/4UeR.gif' width='200'>
     </div>
     """, unsafe_allow_html=True)
