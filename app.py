@@ -51,6 +51,10 @@ def set_background():
             .subtitle {
                 font-size: 18px;
             }
+            .gif-container {
+                text-align: center;
+                margin-top: 20px;                
+            }
         </style>
         <script>
             document.title = "🔮 Superposición de PDFs Miguelito 👽";
@@ -78,6 +82,11 @@ def main():
         
         with open(salida_pdf, "rb") as f:
             st.download_button("🚀 Descargar PDF resultante", f, file_name="RESULTADO.pdf", mime="application/pdf")
+st.markdown("""
+    <div class='gif-container'>
+        <img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGQ0cHhieGx2OGllZDU2Nm96eWVobnQzeGVodmhkZzVjazdya3liMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RfvBXK1m8Kcdq/giphy.gif' width='200'>
+    </div>
+    """, unsafe_allow_html=True)
     
 if __name__ == "__main__":
     main()
