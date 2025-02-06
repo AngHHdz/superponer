@@ -56,7 +56,11 @@ def set_background():
                 text-align: center;
                 margin-top: 40px;              
             }
-
+ .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK {
+        display: none;
+    }
         </style>
         <script>
             document.title = "🔮 Superposición de PDFs Miguelito 👽";
