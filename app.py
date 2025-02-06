@@ -84,7 +84,7 @@ def main():
 
 st.markdown("""
     <div style='margin-top: 50px; text-align: center;'>
-        <img src='https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif' width='200'>
+        <img src='https://i.gifer.com/4UeR.gif' width='200'>
     </div>
     """, unsafe_allow_html=True)
     
