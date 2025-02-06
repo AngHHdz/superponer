@@ -53,7 +53,7 @@ def set_background():
             }
             .gif-container {
                 text-align: center;
-                margin-top: 400px;              
+                margin-top: 40px;              
             }
         </style>
         <script>
@@ -84,7 +84,7 @@ def main():
             st.download_button("🚀 Descargar PDF resultante", f, file_name="RESULTADO.pdf", mime="application/pdf")
 
 st.markdown("""
-    <div style='margin-top: 50px; text-align: center;'>
+    <div style='margin-top: 500px; text-align: center;'>
         <img src='https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif' width='200'>
     </div>
     """, unsafe_allow_html=True)
