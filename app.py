@@ -48,11 +48,11 @@ def set_background():
 
 def main():
     set_background()
-    st.title("🔮 Superposición de PDFs - Estilo Futurista")
-    st.markdown("**Sube dos PDFs y obtén una versión combinada con un diseño moderno.**")
+    st.title("🔮 Superposición de PDFs - Miguelito")
+    st.markdown("**EL USO DE ESTA APP, MERECE UNA COCA COLA .**")
     
-    pdf_base = st.file_uploader("📄 Sube el PDF base", type="pdf")
-    pdf_superpuesto = st.file_uploader("📄 Sube el PDF a superponer", type="pdf")
+    pdf_base = st.file_uploader("📄 Carga el primer PDF", type="pdf")
+    pdf_superpuesto = st.file_uploader("📄 Carga el segundo PDF", type="pdf")
     
     if pdf_base and pdf_superpuesto:
         with open("base.pdf", "wb") as f:
