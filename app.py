@@ -8,12 +8,12 @@ def superponer_pdf(pdf_base, pdf_superpuesto, salida):
     reader_superpuesto = PdfReader(pdf_superpuesto)
     writer = PdfWriter()
     
-    # Iterar sobre las páginas y superponerlas
+
     for i in range(len(reader_base.pages)):
         page_base = reader_base.pages[i]
-        if i < len(reader_superpuesto.pages):  # Verificar que haya páginas suficientes en el superpuesto
+        if i < len(reader_superpuesto.pages):
             page_superpuesto = reader_superpuesto.pages[i]
-            page_base.merge_page(page_superpuesto)  # Superponer
+            page_base.merge_page(page_superpuesto)
         writer.add_page(page_base)
     
     # Guardar el nuevo PDF
@@ -41,6 +41,11 @@ def set_background():
                 color: white;
                 border-radius: 10px;
             }
+            .title {
+                text-align: center;
+                font-size: 32px;
+                font-weight: bold;
+            }
         </style>
         """,
         unsafe_allow_html=True
@@ -48,11 +53,11 @@ def set_background():
 
 def main():
     set_background()
-    st.title("🔮 Superposición de PDFs - Miguelito")
-    st.markdown("**EL USO DE ESTA APP, MERECE UNA COCA COLA .**")
+    st.markdown("<h1 class='title'>🔮 Superposición de PDFs - Miguelito 👽</h1>", unsafe_allow_html=True)
+    st.markdown("**El uso de esta app merece una coca cola bien fría.**")
     
-    pdf_base = st.file_uploader("📄 Carga el primer PDF", type="pdf")
-    pdf_superpuesto = st.file_uploader("📄 Carga el segundo PDF", type="pdf")
+    pdf_base = st.file_uploader("📄 Carga el primer PDF 1️⃣", type="pdf")
+    pdf_superpuesto = st.file_uploader("📄 Carga el segundo PDF 2️⃣", type="pdf")
     
     if pdf_base and pdf_superpuesto:
         with open("base.pdf", "wb") as f:
