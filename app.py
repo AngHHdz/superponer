@@ -63,7 +63,6 @@ def set_background():
         unsafe_allow_html=True
     )
 
-
 def main():
     set_background()
     st.markdown("<h1 class='title'>🔮 Superposición de PDFs  Miguelito 👽</h1>", unsafe_allow_html=True)
@@ -82,17 +81,6 @@ def main():
         
         with open(salida_pdf, "rb") as f:
             st.download_button("🚀 Descargar PDF resultante", f, file_name="RESULTADO.pdf", mime="application/pdf")
-            
-def set_background():
-    st.markdown(
-        """
-        <style>
-            body {
-
-            }
-            .gif-container {
-                text-align: center;
-                margin-top: 40px;    
 
 st.markdown("""
     <div style='margin-top: 50px; text-align: center;'>
