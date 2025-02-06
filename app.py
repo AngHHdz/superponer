@@ -60,7 +60,7 @@ def set_background():
 def main():
     set_background()
     st.markdown("<h1 class='title'>🔮 Superposición de PDFs  Miguelito 👽</h1>", unsafe_allow_html=True)
-    st.markdown("<h2 class='title add'>**El uso de esta app merece una coca cola bien fría 🥤.**</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 class='title add'>**El uso de esta app merece una coca cola bien fría 🥤.**</h2>")
     
     pdf_base = st.file_uploader("📄 Carga el primer PDF 1️⃣", type="pdf")
     pdf_superpuesto = st.file_uploader("📄 Carga el segundo PDF 2️⃣", type="pdf")
