@@ -49,7 +49,7 @@ def set_background():
              }
             .title add {
                 text-align: center;
-                font-size: 20px;
+                font-size: 9px;
                 font-weight: bold;
             }
         </style>
