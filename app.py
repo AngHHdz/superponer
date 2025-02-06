@@ -1,6 +1,17 @@
 from PyPDF2 import PdfReader, PdfWriter
 import streamlit as st
 import base64
+import streamlit as st
+
+# Add custom CSS to hide the GitHub icon
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
+# Your app code goes here
 
 def superponer_pdf(pdf_base, pdf_superpuesto, salida):
     # Leer los archivos PDF
